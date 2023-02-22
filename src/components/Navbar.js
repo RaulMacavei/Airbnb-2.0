@@ -6,9 +6,9 @@ import { BiSearchAlt } from "react-icons/bi";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center sm:mx-6 md:mx-10 lg:mx-14">
+    <div className="flex justify-between border-y items-center sm:px-6 md:px-10 lg:px-14">
       {/* Mobile Device */}
-      <div className="flex mt-4 mx-5 border-2 rounded-full md:hidden">
+      <div className="flex mt-4 mx-3 border-2 rounded-full md:hidden">
         <div className="flex w-[636px] h-[54px] rounded-full shadow-md">
           <div className="flex justify-center py-4 px-4">
             <BiSearchAlt className="text-[24px]" />
