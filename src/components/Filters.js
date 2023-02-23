@@ -13,7 +13,7 @@ import {
 } from "react-icons/gi";
 import { TbBeach, TbSailboat, TbMountain } from "react-icons/tb";
 import { IoSnow, IoGolf } from "react-icons/io5";
-import { FaSkiing } from "react-icons/fa";
+// import { FaSkiing } from "react-icons/fa";
 import { VscSettings } from "react-icons/vsc";
 
 const Filters = () => {
@@ -29,17 +29,20 @@ const Filters = () => {
     { title: "Mansion", icon: <GiFamilyHouse /> },
     { title: "Windmills", icon: <GiWindmill /> },
     { title: "Arctic", icon: <IoSnow /> },
-    { title: "Mountain", icon: <TbMountain /> },
-    { title: "Ski-in/out", icon: <FaSkiing /> },
-    { title: "Desert", icon: <GiDesert /> },
+    {
+      title: "Mountain",
+      icon: <TbMountain />,
+      css: "hidden md:flex lg:flex 2xl:flex",
+    },
+    { title: "Desert", icon: <GiDesert />, css: "hidden lg:flex 2xl:flex" },
   ];
   return (
-    <div className="sm:mx-6 md:mx-10 lg:mx-14 mt-4 mx-4">
-      <div className="flex gap-8 justify-center text-[#6e6e6e]">
+    <div className="relative my-4">
+      <div className="flex sm:text-[14px] md:text-[16px] gap-6 text-[#6e6e6e]">
         {sorting.map((obj) => (
-          <Filter title={obj.title} icon={obj.icon} />
+          <Filter title={obj.title} icon={obj.icon} css={obj.css} />
         ))}
-        <button className="flex justify-center items-center gap-2 px-[10px] rounded-md border-2 text-[12px]">
+        <button className="flex md:justify-center items-center gap-2 px-[12px] rounded-md border-2 text-[12px]">
           <VscSettings />
           Filter
         </button>
