@@ -2,7 +2,6 @@ import React from "react";
 import Rental from "../components/Rental";
 
 import Varna from "../assets/Varna.webp";
-import Rijeka from "../assets/Rijeka.webp";
 import Athens from "../assets/Athens.webp";
 import Istanbul from "../assets/Istanbul.webp";
 import Bucharest from "../assets/Bucharest.webp";
