@@ -38,7 +38,7 @@ const Filters = () => {
   ];
   return (
     <div className="relative my-4">
-      <div className="flex sm:text-[14px] md:text-[16px] gap-6 text-[#6e6e6e] 2xl:gap-12">
+      <div className="flex sm:text-[14px] md:text-[16px] gap-4 text-[#6e6e6e] xl:gap-6 3xl:gap-12">
         {sorting.map((obj) => (
           <Filter title={obj.title} icon={obj.icon} css={obj.css} />
         ))}
