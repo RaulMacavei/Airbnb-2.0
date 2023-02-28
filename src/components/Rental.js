@@ -3,7 +3,7 @@ import React from "react";
 const Rental = ({ image, title, description, beds, price }) => {
   return (
     <div className="hover:cursor-pointer">
-      <div className="flex h-[220px]">
+      <div className="flex h-[260px]">
         <img src={image} alt="" className="object-cover rounded-xl" />
       </div>
       <div className="flex pt-1 text-[14px] font-semibold">{title}</div>
